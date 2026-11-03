@@ -1,0 +1,25 @@
+.hallo{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;  
+}
+
+.SIdEWoW{
+    display: flex;
+}
+.stats{
+    display: flex;
+    flex-direction: column;  
+    flex: 50%; 
+}
+.stats h3{
+    margin-bottom: -1vh;;
+}
+/* margin is like on the outside, right? padding fills in the inside. an easy way to check this is to put background colour and see what happens when you change the margin or padding */
+.stats img{
+    justify-self: center;
+    align-self: center;
+    width: 50vw;
+}
+/* needs justify because it decides the horizontal. needs align because it defines the vertical.
+justify-content and align-content does the same for things within the div*/
