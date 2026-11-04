@@ -23,3 +23,10 @@
 }
 /* needs justify because it decides the horizontal. needs align because it defines the vertical.
 justify-content and align-content does the same for things within the div*/
+
+.centered{
+    justify-self: center;
+    align-self: center;
+    text-align: center; /* this just makes the text be aligned*/
+    margin-top: -1vh; /* -1vh is -1% of viewport height */
+}
