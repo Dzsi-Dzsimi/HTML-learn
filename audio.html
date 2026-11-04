@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio page</title>
+</head>
+<body>
+    <h1>
+        this page includes audio
+    </h1>
+    <p>play for relaxing rain sounds</p>
+    <audio controls autoplay muted loop> <!--controls is for the buttons to start and mute or not. The muted is for no audio. the autoplay is for autoplay. loop for loop. -->
+        <source src="/assets/audio/rain_sound.mp3" type = "audio/mpeg">
+        <source src="/assets/audio/thunder sound.mp3" type = "audio/mpeg"> <!--this is a fallback. type = "audio/wav" for .wav file. ideally it would be a different format file of same audio so that if one type is not supported the other is a fallback.-->
+    </audio>
+    <p>play for thunderous rain sounds</p>
+    <audio controls>
+        <source src="/assets/audio/thunder sound.mp3" type = "audio/mpeg">
+    <br>
+    </audio> 
+    <br>
+    <h3>This page also includes video: </h3>
+    <p>Click to play relaxing rain stock video: </p>
+    <video src="/assets/videos/raining.mp4" width="500px" controls></video>
+    
+    <br>
+    <a href="./learn.html">go back to learning page</a>
+</body>
+</html>
