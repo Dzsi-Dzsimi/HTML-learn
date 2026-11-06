@@ -5,15 +5,20 @@
         <link rel="icon" type="image/png" href="/assets/images/learn_icon.png">
     </head>
     <body>
+        <script type="module" src="learn.js"></script> <!-- putting it at the top means it loads first and is the same as deferring it (deferring = "load this first"). type is not necessarily needed-->
         <!-- contains visible elements -->
-         <h1>This is an h1 heading</h1>
+         <h1 id="startOfPage">This is an h1 heading</h1>
          <h2>This is an h2 heading</h2>
          <h3>This is an h3 heading</h3>
          <h4>This is an h4 heading</h4>
          <h5>This is an h5 heading</h5>
          <h6>This is an h6 heading</h6>
-        <br> <!--br used for line break, same as for the paragraphs-->
+         <a href = "./index.html" title = "Takes to home page"> <!-- ./ used to reference within this file. Title is used for hover of mouse on it (and small popup shows) (a for anchor) -->
+            Go back to home page</a>
+         <p>also, <a href="./audio.html">Click here for small test page on audio</a></p>
         <hr> <!--horizontal line-->
+        <br> <!--br used for line break, same as for the paragraphs-->
+        <h1>Paragraph and image forms:</h1>
         <p>
             Lorem <!--paragraphs dont care about newlines-->ipsum, dolor sit amet consectetur adipisicing elit. Nostrum rem minima, numquam voluptate at vel optio dolore praesentium nemo nihil quo, eos id <br/>libero non ad architecto totam. Minima, ut.
          </p>
@@ -36,18 +41,17 @@ wow
             
         </div>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum rem minima, numquam voluptate at vel optio dolore praesentium nemo nihil quo, eos id libero non ad architecto totam. Minima, ut.</p> <!-- paragraphs are separated with line break-->
-         <a href = "./index.html" title = "Takes to home page"> <!-- ./ used to reference within this file. Title is used for hover of mouse on it (and small popup shows) (a for anchor) -->
-            Go back to home page
-         </a> <br>
-
-         <h3>Text formats:</h3>
+         <br>
+         
+         <hr>
+         <h1>Text formats:</h1>
          <p>This is normal text.</p>
          <p>This is <b>bold</b> text.</p>
          <p>This is <i>italics</i> text.</p>
          <p>This is <u>underlined</u> text.</p>
          <p>This is <del>deleted</del> text.</p>
          <p>This is <big>big</big> text.</p>
-         <p>This is <small style="color: red;">small red</small> text.</p>
+         <p>This is <small style="color: red;">small red</small> text.</p> <!-- inline css -->
          <p>This is <sub style="background-color: brown;">subscript highlighted</sub> text.</p>
          <p>This is <sup>superscript</sup> text.</p>
          <p>This is <tt>monospaced</tt> text.</p>
@@ -56,19 +60,110 @@ wow
          <!-- Group together in HTML -->
          <!-- <span> is inline container to group elements for styling purposes -->
          <!-- <div> is block container to group elements for styling purposes-->
-         
-        <h1><span>This is a span title</span></h1>
-        <h1>This is a div title</h1>
+         <hr>
+        <h1>Spans and divs</h1>
+        <h2><span style = "background-color: tomato;">This is a span title</span></h2> <!--span only goes up to the size of the block.-->
+        <h2><div style = "background-color: cyan;">This is a div title</div></h2> <!--div is a block level container, it takes entire width of document here.-->
 
-         <div>
-            <h1>this is a h1 within a div</h1>
-            <h2> this is a h2 withina  div</h2>
-            <h3> this is h3 within dv</h3>
+        <p><span style="background-color: blanchedalmond;">this is a span sentence</span></p>
+        <p><div style = "background-color: aliceblue;">this is a div sentence</div></p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span style = "background-color: aquamarine;">Quibusdam, quasi. Qui consequatur distinctio voluptate vero quia officia vitae amet quisquam, tempora rerum dolorum dolor, nihil, et earum eaque aliquid ipsum?</span></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <div style = "background-color: crimson;">Nemo, consequatur vel amet, hic deleniti quaerat reprehenderit quos qui deserunt expedita minus sed sint temporibus vitae beatae molestias praesentium ex porro.</div></p>
+        <!-- div in second p created a block level element and thus the two sections of the paragraph were separated  -->
+        <hr>
+        <div>
+            <h1>Lists: </h1>
             
+            <!-- Unordered lists (makes bullet points) -->
+            
+            <h4>An unordered list</h4>
+            <ul>
+                <li>This is a bullet point</li>
+                <li>Another bullet point</li>
+                <ul>
+                    <li>Nested bullet point</li>
+                    <li>Another one here</li>
+                </ul>
+            </ul>
+            
+            <!-- Ordered lists (makes numbers or letters etc.) -->
+            <h4>Todo list: (ordered lists) </h4>
+            <ol>
+                <li>Wake up on time</li>
+                <li>Eat breakfast</li>
+                <li>Go to classes</li>
+                <li>Walk dog</li>
+                <li>Work:</li>
+                <ol type="a">
+                    <li>homework</li>
+                    <li>study</li>
+                </ol>
+            </ol>
 
+            <!-- Description lists (made of key-value pairs) -->
+            <h4>mythical creatures (description lists)</h4>
+            <dl style = "background-color: greenyellow; border: 2px solid">
+                <dt> Dragon </dt> <!-- term -->
+                <dd>A dragon is a mythical, serpentine creature found in the folklore of cultures around the world, typically depicted as a large, powerful reptile with features drawn from other animals such as wings, claws, and horns.</dd>
+                <!-- dd is description of the term -->
+                <dt> Phoenix </dt>
+                <dd>A phoenix is a legendary immortal bird that cyclically regenerates by rising from the ashes of its predecessor. </dd>
+                <dt> Vampire </dt>
+                <dd>A vampire is a mythological undead creature that feeds on the blood of the living. The word entered English in the early 18th century from the Serbian vampir, itself likely derived from a Slavic root related to drinking or sucking. </dd>
+                <dt> Werewolf </dt>
+                <dd>A werewolf is a human who shapeshifts into a wolf or wolf-like hybrid, either voluntarily or through a curse.</dd>
+            </dl>
+
+            <hr>
+            <h1>Tables:</h1>
+
+            <table border="3" style="background-color: black;" >
+                <tr align="left" style="background-color: aqua;"> <!-- Table row -->
+                    <th width="100">Monday</th> <!-- Table colum (table header) -->
+                    <th width="100">Tuesday</th>
+                    <th width="100">Wednesday</th>
+                    <th width="100">Thursday</th>
+                    <th width="100">Friday</th>
+                    <th width="100">Saturday</th>
+                    <th width="100">Sunday</th>
+                </tr>
+                <tr align="right" style="background-color: azure;">
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>10-2</td>
+                    <td>Closed</td>
+                </tr>
+                <tr align="center" style="background-color: azure;">
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>9-5</td>
+                    <td>10-2</td>
+                    <td>Closed</td>
+                </tr>
+            </table>
+            <br>
+            <hr>
          </div>
+
+         <h1>Buttons:</h1>
+         <button style="font-size: 3vw; background-color: aquamarine; color: red; border-radius: 20px;" onclick="location.href='./index.html'">click me to return to main page</button> <!-- vw is for viewport width (aka relative size). px is for pixels, so it is a set size -->
+         <!-- Style is used for css styling -->
+          <br><br>
+          <a href="#startOfPage">
+            <button style="font-size: 3vw;">Start of page!</button>
+          </a> <!-- The href for anchors can also be used for directing to a part of the page. Here the id of h1 at start is used. -->
+         
+          <br><br>
+          <p id="greetings">Hello</p>
+          <button onclick="doSomething()" style="font-size: 30px;" >button connected to JS function</button>
+
          <div>
-         <a href="./audio.html">Click here for small test page on audio</a>
          <br>
          <a href="mailto:test@fake.com">Email me</a>
          </div>
