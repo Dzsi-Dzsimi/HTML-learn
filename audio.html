@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/images/audio_icon.webp">
+    <link rel="icon" type="image/x-icon" href="./assets/images/audio_icon.webp">
     <title>Audio page</title>
 </head>
 <body>
@@ -12,19 +12,19 @@
     </h1>
     <p>play for relaxing rain sounds</p>
     <audio controls autoplay loop> <!--controls is for the buttons to start and mute or not. The muted is for no audio. the autoplay is for autoplay. loop for loop. -->
-        <source src="/assets/audio/rain_sound.mp3" type = "audio/mpeg">
-        <source src="/assets/audio/thunder sound.mp3" type = "audio/mpeg"> <!--this is a fallback. type = "audio/wav" for .wav file. ideally it would be a different format file of same audio so that if one type is not supported the other is a fallback.-->
+        <source src="./assets/audio/rain_sound.mp3" type = "audio/mpeg">
+        <source src="./assets/audio/thunder sound.mp3" type = "audio/mpeg"> <!--this is a fallback. type = "audio/wav" for .wav file. ideally it would be a different format file of same audio so that if one type is not supported the other is a fallback.-->
     </audio>
     <p>play for thunderous rain sounds</p>
     <audio controls>
-        <source src="/assets/audio/thunder sound.mp3" type = "audio/mpeg">
+        <source src="./assets/audio/thunder sound.mp3" type = "audio/mpeg">
     <br>
     </audio> 
     <br>
     <h3>This page also includes video: </h3>
     <p>Click to play relaxing rain stock video: </p>
     <a href="https://en.wikipedia.org/wiki/Precipitation" target="_blank">
-    <video src="/assets/videos/raining.mp4" width="1000px" controls autoplay muted loop></video> <!--you can also have source attribute instead of src=. this would allow for backups in case one cannot be played -->
+    <video src="./assets/videos/raining.mp4" width="1000px" controls autoplay muted loop></video> <!--you can also have source attribute instead of src=. this would allow for backups in case one cannot be played -->
     </a>
     <br>
     <a href="./learn.html">go back to learning page</a>

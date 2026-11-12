@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+}
+
+.odd{
+    color: red;
+}
+
+#para4{ /* # is for ids */
+    color:green;
+}
+
+#para5{
+    background-color: rgb(112, 128, 144); /* slategray but we used rgb colors */
+    color: #FFFFFF;
+}
+/* hue saturation lightness */
+#para6{
+    background-color: hsla(88, 88%, 19%, 0.705);
+    color: hsla(57, 100%, 50%, 0.93); /* last one is opacity */
+}
+.hslaDesc{
+    background-color: salmon;
+    color: black;
+}
