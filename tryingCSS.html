@@ -7,19 +7,26 @@
     <link rel="icon" type="image/png" href="./assets/images/css-icon.webp">
     <link rel="stylesheet" href="./tryCSS.css">
     <!-- having style tags in here would be example of internal stylesheets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <button onclick="location.href='./index.html'">Return to main page</button>
-    <h1>This is the css first website</h1> <!-- Inline example would be style="..." -->
+    <header>
+        <button onclick="location.href='./index.html'">Return to main page</button>
+        <button onclick="location.href='./learn.html'">Go back to learning page</button>
+        <hr>
+        <h1>This is the css first website</h1> <!-- Inline example would be style="..." -->
+    </header>
     <!-- Inline, Internal, External -->
-    <p style="color:red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, ex sequi architecto nemo nostrum adipisci porro ipsa voluptate ab, praesentium amet sit asperiores nobis minus! Mollitia quos ratione architecto voluptatem.</p> 
+<!--Inline--><p style="color:red">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, ex sequi architecto nemo nostrum adipisci porro ipsa voluptate ab, praesentium amet sit asperiores nobis minus! Mollitia quos ratione architecto voluptatem.</p> 
     <p style="color:aqua" class="even">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore maxime aliquam vitae earum commodi a deserunt voluptate, aspernatur, delectus explicabo laboriosam, modi iure repellendus! Veritatis magnam qui fugiat ducimus commodi.</p>
     <p style="color:lightgreen">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi eos cumque atque unde quibusdam explicabo eveniet amet nam reprehenderit voluptatum distinctio modi ab, eligendi nulla velit veniam id totam sapiente?</p>
     <p id="para4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi doloremque rerum repudiandae sequi earum cum. Mollitia, ipsum architecto fuga, nobis recusandae possimus similique ex adipisci dolorem, accusantium blanditiis distinctio dolor. </p>
     <hr>
-    <p id="para5">This paragraph has a style created with id, rgb colour value and hex colour value</p>
+<!--External--><p id="para5">This paragraph has a style created with id, rgb colour value and hex colour value</p>
     <p id="para6">Hue saturation lightness </p>
-    <div class="hslaDesc">
+    <div class="BulletDesc">
     <p><big><strong>HSLA is a CSS</strong> color model that defines colors using four values: Hue, Saturation, Lightness, and Alpha.</big></p>
     <ul>
         <li><strong>Hue:</strong> A degree on the color wheel from 0 to 360 (e.g., 0/360 is red, 120 is green, 240 is blue).</li>
@@ -28,6 +35,38 @@
         <li><strong>Alpha:</strong> A number between 0.0 and 1.0, where 0.0 is fully transparent and 1.0 is fully opaque.</li>
     </ul>
     </div>
+        <p><span style="background-color: white;">Testing testing</span><span style="background-color: red; font-size: calc(10vw-100px);">testing</span></p>
+        <h4><span style="background-color:blanchedalmond">This is within a span+-5/4</span></h4> <!-- span is intended for inline content -->
+        <h5>text</h5>
+        <hr>
+        <h1>Fonts</h1>
+        <div class="BulletDesc">
+            <h3>These are the some of the font styles in html</h3>
+            <ul>
+                <li style="font-family: Verdana, Arial, sans-serif;">Verdana font family</li> <!--Fallbacks are arial, sans serif-->
+                <li style="font-family: 'lucida console', 'courier new'; font-size: 1em;">Lucida console</li> <!--em is the standard size, so 1 em is 100% normal size-->
+                <li style="font-family: 'Redaction 50', Verdana, Geneva, Tahoma, sans-serif; font-size: 2vw;">Redaction 50 from google import</li>
+                <li class="flamey">THIS IS FLAMEY TEXT FROM DOWNLOADED FONTS.</li>
+                <li class="blackflamey">THIS IS THE BLACK VERSION</li>
+            </ul>       
+        </div>
+        <div id="BorderTryDiv">
+            <h1>Borders:</h1>
+            <p style="border-style: dotted;">paragraph with dotted border</p>
+            <p style="border-style: groove;">paragraph with goove border</p>
+            <p style="border-style: inset;">paragraph with inset border</p>
+            <p style="border-style: solid;">paragraph with solid border</p>
+            <div id="SpecialBorder">
+                <br>
+                <h1>wowowowow cool borders customised wow</h1>
+                <br>
+            </div>
+        </div>
+        <br>
+        <div style="background-color: white;">
+            <h1 style="color: black;">Shadows</h1>
+            <h2 style="text-shadow: 3px 3px 3px;">this text has shadow</h2> <!--text-shadow: (horizontal offset) (vertical offset) (blur)-->
+        </div>
 
 </body>
 </html>
