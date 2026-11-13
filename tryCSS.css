@@ -9,6 +9,7 @@
 
 body{
     background-color: black;
+    margin: 2vw;
 }
 h1{
     color: white;
@@ -75,3 +76,50 @@ h5{
     border-bottom: 3px ridge hsl(51, 100%, 65%);
 }
 
+.shadowText{
+    text-shadow:3px 3px 5px red, -3px -3px 5px blue; /* you can have multiple text shadows, they are comma separated */
+}
+
+#shadowsDiv{
+    background-color: white;
+}
+
+#shadowBox{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(10, 201, 0);
+    box-shadow: 3px 3px 5px;
+    margin: 0 auto;
+} 
+/* margin 0 auto makes it centered. The way it would have been centered if all other items in the div were to be centered:
+        - display: flex; - needed for making the box a flex container
+        - justify-content: center; - needed for centering horizontally
+        - align-items: center; - needed for centering vertically */
+
+.margin_box{
+    border: 5px solid white;
+    font-size: 5em;
+    color: black;
+    width: 250px;
+    height: 250px;
+}
+
+#margin_box1{
+    background-color: rgb(147, 53, 53);
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#margin_box2{
+    background-color: rgb(80, 80, 226);
+    font-size: 50px;
+    margin: 0 auto; /* 0 is top and bottom margins, auto is left and right margins. this centers */
+}
+
+/* UNITS OF MEASUREMENT:
+- 1em = 100% size relative to parent font size. So if youre within a div of font-size: 5px; then 2em = 2*5=10px.
+- 1rem = 100% size relative to root size. So it is em but takes the default size to scale (eg a p has set size).
+- % = percentage of the value of the size set
+- 1vw = 1% of viewport width. This is the window's width 
+- 1vh = 1% of viewport height.
