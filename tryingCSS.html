@@ -81,5 +81,119 @@
          <div class="margin_box" id="margin_box2">
             Box 2
          </div>
+    <div class="floatDiv">
+        <!-- float = allows oother elements to flow around it. -->
+         <h1>Floats: </h1>
+         <img src="./assets/images/pokeball.webp" height="150px" id="float_img" alt="poke ball"> <!-- Image is a block level element -->
+    
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quo numquam ducimus hic sunt asperiores labore quos eos sint molestiae velit, porro vel quia exercitationem doloremque fugit repellendus voluptatem dolorem?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, ducimus. Corrupti perferendis placeat itaque! Soluta maxime debitis doloremque reprehenderit incidunt enim? Esse nisi accusantium maiores recusandae optio? Quae, blanditiis quas.</p>
+        <br> <br> <br>
+        <img src="./assets/images/rock-hyrax.webp" height="150px" id="float_img2" alt="very cute hyrax">
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam ullam natus error, deserunt vel dolores similique magnam. Officiis esse hic libero quaerat, vel minus sed rerum porro soluta eius ipsam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti optio modi corrupti adipisci, nam ullam quod veritatis id consequuntur, aliquam, voluptates aspernatur expedita? Veniam asperiores, assumenda quasi eius corrupti eum.</p>
+    </div>
+    <div class="overflowDiv">
+        <h1>Overflows:</h1>
+        <!--overflow = property that sets the desired
+                       behaviour when content does not fit in the
+                       parent element box (overflows) 
+
+                       overflow: visible = if any elements were to overflow, allow it to do so
+                       overflow: hidden = if any content overflows, it is hidden.
+                       overflow: clip = used alongside overflow-clip-margin: size; to determine how much content is shown above overflow 
+                       overflow: scroll = makes horizontal and vertical overflow bars
+                       overflow: auto = makes scrollbar only if needed, so for example horizontal might not be needed
+        -->
+        <p style="margin-bottom: 0px;">overflow = property that sets the desired
+                       behaviour when content does not fit in the
+                       parent element box (overflows):</p>
+        <ul style="margin-top: 0px;">
+            <li>overflow: visible = if any elements were to overflow, allow it to do so</li>
+            <li>overflow: hidden = if any content overflows, it is hidden.</li>
+            <li>overflow: clip = used alongside overflow-clip-margin: size; to determine how much content is shown above overflow</li>
+            <li>overflow: scroll = makes horizontal and vertical overflow bars</li>
+            <li>overflow: auto = makes scrollbar only if needed, so for example horizontal might not be needed</li>
+        </ul>
+    </div>
+    <div>
+        <!-- display = property specifies if/how an element is displayed 
+            
+             block-level = start on a new line, take up the full width available (h1, div, p, form, header, footer)
+             
+             inline = do not start on a new line, width is limited to what is needed (span, a, img)
+        -->
+        <h1>Display properties:</h1>
+        <div id="displayDiv">div</div>
+        <span id="displaySpan">span</span>
+        <p style="color: white; display:inline">inline-block</p>
+    
+        <p style="color: white;">More properties: </p>
+        <ul style="color: white;">
+            <li><b>display: block;</b> - Takes up the full available width and starts on a new line. (e.g. div, p, h1)</li>
+            <li><b>display: inline;</b> - Only takes up as much width as necessary. Elements sit next to each other. Width and height cannot be set normally. (e.g. span, a)</li>
+            <li><b>display: inline-block;</b> - Sits next to other inline elements but allows you to set width and height.</li>
+            <li><b>display: none;</b> - Completely hides the element and removes it from the page layout.</li>
+            <li><b>display: flex;</b> - Creates a flexible layout, making it easier to align and distribute elements horizontally or vertically.</li>
+            <li><b>display: grid;</b> - Creates a grid-based layout with rows and columns.</li>
+            <li><b>display: table;</b> - Makes an element behave like an HTML table.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Height and width:</h1>
+        <div class="box"><h1 style="color:black;">This is first box</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro id at, eos perspiciatis quia quo doloribus earum delectus ducimus exercitationem natus, explicabo et quas similique voluptas harum sint dolorum adipisci.</p></div>
+        <div class="box"><h1 style="color:black;">This is second box</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro id at, eos perspiciatis quia quo doloribus earum delectus ducimus exercitationem natus, explicabo et quas similique voluptas harum sint dolorum adipisci.</p></div>
+        <hr>
+        <br>
+        <h1>Position:</h1>
+        <!-- position: 
+                relative = positioned relatice to where it normally would be  
+                fixed = positioned relative to the viewport
+                absolute = positioned relative to nearest ancestor
+                sticky = positioned based on scroll position
+                static = default position
+                -->
+        <div id="box1">
+            <div id="box2"><h3>position:</h3>
+            <ul>
+                <li>relative = positioned relatice to where it normally would be</li>
+                <li>fixed = positioned relative to the viewport</li>
+                <li>absolute = positioned relative to nearest ancestor</li>
+                <li>sticky = positioned based on scroll position</li>
+                <li>static = default position</li>
+            </ul></div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div id="combinatorContainer">
+                <h1>Combinators:</h1>
+            <!-- combinators = explains the relationship between listed selectors
+                    = descendant (space)
+                > = child
+                ~ = general sibling
+                + = adjacent sibling
+
+                eg div > p means we're applying css properties to any paragraph element (child) found within this div section
+                -->
+                <p>This is #1</p>
+                <p>This is #2</p>
+                    <div>
+                        <p>This is #3</p>
+                    </div>
+            </div>
+                <p>This is #4</p>
+        </div>
+        <hr>
+        <div>
+            <h1>Pseudo-classes</h1>
+            <button>BUTTONNN</button>
+            <a href="https://hyrax.world/types-of-hyraxes/" target="_blank">LINKKKKK</a>
+        </div>
+
+
 </body>
 </html>
