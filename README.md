@@ -14,3 +14,8 @@ There was also minimal JavaScript used to create functionality (just for a butto
 Future goals:
 - Use CSS to style ALL pages. (Includes learning how to use CSS)
 - Use JavaScript to create functionality for the webpage (things such as buttons)
+
+# Update 2:
+- tryingCSS file is used to test CSS properties. it is called Learning CSS.
+- CSS file and HTML file for trying CSS contains notes and important info on CSS knowledge so far.
+- Fixed images not loading on GitPages version of website.
