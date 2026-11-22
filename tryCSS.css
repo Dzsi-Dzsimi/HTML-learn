@@ -393,3 +393,128 @@ button:hover{
 .navbar li{
     float:left;
 }
+
+.gallery{
+    display: inline-block;
+    border: 1px solid hsl(0, 0%, 90%);
+    margin:  5px;
+    width: 200px;
+}
+.gallery .description{
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.gallery:hover{
+    border: 1px solid hsl(0, 0%, 40%);
+}
+.gallery img{
+    width: 200px;
+    height: 300px;
+}
+
+.icons{
+    text-align: center;
+    margin-right: 20px;
+}
+.icons .fa-youtube {
+    color: red;
+}
+.icons .fa-youtube:hover {
+    color: hsl(0, 100%, 55%);
+}
+
+.icons i {
+    font-size: 10px;
+}
+.icons .fa-chrome{
+    color: rgb(255, 255, 255);
+}
+.icons .fa-chrome:hover{
+    color: rgb(185, 185, 185);
+}
+.icons .fa-eye{
+    color: rgb(177, 151, 252);
+}
+.icons .fa-eye:hover{
+    color: rgb(137, 118, 195);
+}
+.icons a{
+    text-decoration: none; /*removes the lil hyperlink that would go between the two */
+}
+
+.flexboxes{
+    display: flex;
+    border: 10px solid white;
+    height: 90vh;
+    justify-content: space-between; /* keeps the spacings between the items equal, good for varying size pages. space-around is same but also makes equal spacings for sides of content */
+    /* text-align: center; would align the text regardless of font size*/
+    align-content: flex-start; /* space between wrapped rows is gone */
+    flex-wrap: wrap; /* if there is not enough space the items will wrap to next row or whatevs */
+    column-gap: 1em;
+    row-gap: 1em;
+} /* flex-direction: column; or row or column-reverse or row-reverse */
+/* justify-content: flex-start is default, flex-end is on the right side. It sets the main-axis (aka the horizontal). center for center */
+/* align-items: ; vertical axis is controlled and is items */
+
+.flexbox{
+    width: 150px;
+    height: 150px;
+    font-size: 8em;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#flexbox1{
+    background-color: rgb(227, 51, 51);
+    /* align-self: center;  can also work to individually align this item (vertical)*/
+    /* justify-self: left; justify this item (horizontal) */
+    order: 3;
+}
+#flexbox2{
+    background-color: rgb(192, 192, 29);
+}
+#flexbox3{
+    background-color: rgb(9, 182, 9);
+    order: -1;
+}
+#flexbox4{
+    background-color: rgb(0, 92, 191);
+}
+
+#transformBox1{
+    width: 500px;
+    height: 250px;
+    border: 5px solid rgb(1, 87, 1);
+    font-size: 13em; 
+    text-align: center;
+    background-color: green;
+
+    transform: translateX(100%); /* By a 100% the width of this element. Negative values translate left. */
+    transform: translateY(1000px);
+    /* transform: translateZ(); */
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    transform: rotateZ(150deg);
+    transform: scaleX(0.9);
+    transform: scaleY(2); /* or scale(x, y) for x and y in one line */
+    transform: skewX(45deg); /* this is waht made it kind of a prallelogram shape */
+    transform: skewY(10deg); /* same but Y */
+}
+/* Other two boxes for transformations */
+#transformBox2{
+    width: 500px;
+    height: 250px;
+    border: 5px solid rgb(143, 122, 4);
+    font-size: 13em; 
+    text-align: center;
+    background-color: rgb(163, 168, 0);
+}
+#transformBox3{
+    width: 500px;
+    height: 250px;
+    border: 5px solid rgb(83, 0, 0);
+    font-size: 13em; 
+    text-align: center;
+    background-color: rgb(203, 33, 33);
+}

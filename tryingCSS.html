@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Redaction+50:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d7443e57ae.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -256,6 +257,68 @@
                 <li><a href="./tryingCSS.html">CSS Page</a></li>
             </ul>
         </nav>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis officiis, incidunt similique nemo ex error dolor dolore sunt optio accusantium. Beatae perferendis ducimus quo natus harum consectetur, repellat velit! Labore?</p>
+        <p style="color: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis officiis, incidunt similique nemo ex error dolor dolore sunt optio accusantium. Beatae perferendis ducimus quo natus harum consectetur, repellat velit! Labore?</p>
+    <h1>Webpage layout:</h1>
+    <button onclick="location.href='./page_layout.html'" style="color: red; background-color: rgb(157, 82, 82);">PAGE</button>
+    <hr>
+    <h1>Image gallery:</h1>
+    <div class="gallery">
+        <a href="./assets/images/hyrax_cool.png" target="_blank">
+            <img src="./assets/images/hyrax_cool.png" alt="cool hyrax">
+        </a>
+        <div class="description">Hyraxes</div>
+    </div>
+    <div class="gallery">
+        <a href="./assets/images/hyrax-tomato.gif" target="_blank">
+            <img src="./assets/images/hyrax-tomato.gif" alt="gif of hyrax eating tomator">
+        </a>
+        <div class="description">Hyraxes</div>
+    </div>
+    <div class="gallery">
+        <a href="./assets/images/rock-hyrax.webp" target="_blank">
+            <img src="./assets/images/rock-hyrax.webp" alt="rock hyrax">
+        </a>
+        <div class="description">Hyraxes</div>
+    </div>
+    <hr>
+    <h1>Icons:</h1>
+    <p style="color:white">Just use either <a href="https://fontawesome.com/" target="_blank">Font Awesome</a> or <a href="https://fonts.google.com/icons" target="_blank">Google Fonts Icons</a></p>
+    <p style="color: white;">For Font Awesome, get the kit by using email, then paste your script into html file, then search up an icon.</p>
+    <p style="color: white;">For Google fonts, select icon from fonts and then use it.</p>
+    <div class="icons">
+        <a href="./audio.html">
+            <i class="fa-regular fa-eye fa-5x"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+            <i class="fa-brands fa-youtube fa-5x"></i> <!--style="color: rgb(229, 14, 14);" is now placed into css instead-->
+        </a>
+        <a href="https://www.google.com" target="_blank">
+            <i class="fa-brands fa-chrome fa-5x"></i>
+        </a>
+    </div>
+    <hr>
+    <h1>Flexboxes:</h1>
+    <div class="flexboxes">
+        <div class="flexbox" id="flexbox1">1</div>
+        <div class="flexbox" id="flexbox2">2</div>
+        <div class="flexbox" id="flexbox3">3</div>
+        <div class="flexbox" id="flexbox4">4</div>
+        <p style="color:white;">Para to see</p>
+    </div>
+    <hr>
+    <h1>Transform property:</h1>
+    <br> <br>
+    <!-- 
+        transform = CSS property that lets you rotate, scale,
+                    skew, or translate an element
+    -->
+        <div id="transformBox1">Hello</div>
+        <div id="transformBox2">Hi</div>
+        <div id="transformBox3">Hola</div>
+        <br>
+        <br>
+        <hr>
+
+    <h1>Animations:</h1>
 </body>
 </html>
