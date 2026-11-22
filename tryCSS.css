@@ -482,14 +482,16 @@ button:hover{
     background-color: rgb(0, 92, 191);
 }
 
-#transformBox1{
-    width: 500px;
-    height: 250px;
-    border: 5px solid rgb(1, 87, 1);
+.transformBoxes{
     font-size: 13em; 
     text-align: center;
-    background-color: green;
+    width: 500px;
+    height: 250px;
+}
 
+#transformBox1{
+    border: 5px solid rgb(1, 87, 1);
+    background-color: green;
     transform: translateX(100%); /* By a 100% the width of this element. Negative values translate left. */
     transform: translateY(1000px);
     /* transform: translateZ(); */
@@ -503,18 +505,11 @@ button:hover{
 }
 /* Other two boxes for transformations */
 #transformBox2{
-    width: 500px;
-    height: 250px;
     border: 5px solid rgb(143, 122, 4);
-    font-size: 13em; 
-    text-align: center;
     background-color: rgb(163, 168, 0);
+    transform: rotateZ(50deg);
 }
 #transformBox3{
-    width: 500px;
-    height: 250px;
     border: 5px solid rgb(83, 0, 0);
-    font-size: 13em; 
-    text-align: center;
     background-color: rgb(203, 33, 33);
 }
